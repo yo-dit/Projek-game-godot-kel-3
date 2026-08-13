@@ -1,0 +1,164 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 485,
+            "type": "VEC3",
+            "max": [
+                1.4699729681015015,
+                0.47033390402793887,
+                1.4685781002044678
+            ],
+            "min": [
+                -1.4708114862442017,
+                -0.4673323333263397,
+                -1.4684832096099854
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 485,
+            "type": "VEC3",
+            "max": [
+                0.9987290501594544,
+                0.9995787143707275,
+                0.9999727010726929
+            ],
+            "min": [
+                -0.9981918931007385,
+                -0.9997909069061279,
+                -0.9999732375144959
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 485,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9990895390510559,
+                -0.9999134540557861,
+                -0.9999525547027588,
+                -0.9990895390510559
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 485,
+            "type": "VEC2",
+            "max": [
+                0.9989998936653137,
+                0.9990000128746033
+            ],
+            "min": [
+                0.0009999931789934636,
+                0.412639856338501
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 2352,
+            "type": "SCALAR",
+            "max": [
+                484.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 27984,
+            "uri": "tire.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 5820,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 5820,
+            "byteLength": 5820,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 11640,
+            "byteLength": 7760,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 19400,
+            "byteLength": 3880,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 23280,
+            "byteLength": 4704,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Torus",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Torus",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
