@@ -9,12 +9,21 @@ extends Control
 @onready var option_menu = $OptionMenu
 
 @onready var animation_player = $AnimationPlayer
+@onready var BackgroundAnimator = $BackgroundAnimator
 @onready var quit_confirmation = $QuitConfirmation
+
+# Audio
+@onready var bg_ambience = $BgAmbience
+@onready var bgm_slider = $OptionMenu/ColorRect/BGMSlider
+@onready var sfx_slider = $OptionMenu/ColorRect/SFXSlider
 
 
 func _ready():
 	credit_menu.hide()
 	option_menu.hide()
+	
+	# Jalankan animasi background
+	BackgroundAnimator.play("bg_move")
 
 	# Hubungkan tombol
 	start_button.pressed.connect(_on_start_pressed)
@@ -29,6 +38,14 @@ func _ready():
 	quit_confirmation.dialog_text = "Are you sure you want to quit?"
 	quit_confirmation.ok_button_text = "Yes"
 	quit_confirmation.cancel_button_text = "No"
+
+	# Hubungkan slider audio
+	bgm_slider.value_changed.connect(_on_bgm_changed)
+	sfx_slider.value_changed.connect(_on_sfx_changed)
+
+	# Terapkan volume awal
+	_on_bgm_changed(bgm_slider.value)
+	_on_sfx_changed(sfx_slider.value)
 
 
 func _on_start_pressed():
@@ -89,3 +106,11 @@ func _on_quit_confirmed():
 
 	# Keluar dari game
 	get_tree().quit()
+
+
+func _on_bgm_changed(value):
+	bg_ambience.volume_db = linear_to_db(value / 100.0)
+
+
+func _on_sfx_changed(value):
+	pass
