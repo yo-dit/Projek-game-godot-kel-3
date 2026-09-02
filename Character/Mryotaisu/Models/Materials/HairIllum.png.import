@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk0b37a62tv2u"
-path.s3tc="res://.godot/imported/T_Tile01_C.tga-83cae8861e387b8a1208ae91d1c2ad32.s3tc.ctex"
+uid="uid://lpoiiu0oig6r"
+path.s3tc="res://.godot/imported/HairIllum.png-77b6a77f59fe559e5c28d6063e35ca12.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/HospitalHorrorPack/Textures/T_Tile01_C.tga"
-dest_files=["res://.godot/imported/T_Tile01_C.tga-83cae8861e387b8a1208ae91d1c2ad32.s3tc.ctex"]
+source_file="res://Character/Mryotaisu/Models/Materials/HairIllum.png"
+dest_files=["res://.godot/imported/HairIllum.png-77b6a77f59fe559e5c28d6063e35ca12.s3tc.ctex"]
 
 [params]
 

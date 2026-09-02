@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk0b37a62tv2u"
-path.s3tc="res://.godot/imported/T_Tile01_C.tga-83cae8861e387b8a1208ae91d1c2ad32.s3tc.ctex"
+uid="uid://dlras56db0ut4"
+path.s3tc="res://.godot/imported/Body.png-fe0e0c6b0f1bbb0d68170aafe4847c28.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/HospitalHorrorPack/Textures/T_Tile01_C.tga"
-dest_files=["res://.godot/imported/T_Tile01_C.tga-83cae8861e387b8a1208ae91d1c2ad32.s3tc.ctex"]
+source_file="res://Character/Mryotaisu/Models/Materials/Body.png"
+dest_files=["res://.godot/imported/Body.png-fe0e0c6b0f1bbb0d68170aafe4847c28.s3tc.ctex"]
 
 [params]
 

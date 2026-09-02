@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://bsjklny4t0r53"]
+
+[ext_resource type="Script" uid="uid://cf0cvf1ltk1f5" path="res://Character/character_body_3d.gd" id="1_fpdgu"]
+[ext_resource type="PackedScene" uid="uid://dbilp5qcwm8yv" path="res://Character/Mryotaisu/Models/Muryotaisu.fbx" id="1_n73jj"]
+[ext_resource type="Texture2D" uid="uid://db3suhvulmnpy" path="res://Character/Mryotaisu/Models/Materials/Face.png" id="2_ox56g"]
+[ext_resource type="Texture2D" uid="uid://dlras56db0ut4" path="res://Character/Mryotaisu/Models/Materials/Body.png" id="3_1wu62"]
+[ext_resource type="Texture2D" uid="uid://lpoiiu0oig6r" path="res://Character/Mryotaisu/Models/Materials/HairIllum.png" id="4_dqf3w"]
+[ext_resource type="Texture2D" uid="uid://cawjict8dbclu" path="res://Character/Mryotaisu/Models/Materials/BodyAo.png" id="4_w8p06"]
+[ext_resource type="Texture2D" uid="uid://q8aqo0ooalr" path="res://Character/Mryotaisu/Models/Materials/Hair.png" id="6_85ew6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fpdgu"]
+height = 2.5195313
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n73jj"]
+albedo_texture = ExtResource("2_ox56g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fpdgu"]
+albedo_texture = ExtResource("4_dqf3w")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2cqe"]
+albedo_texture = ExtResource("3_1wu62")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dqf3w"]
+albedo_texture = ExtResource("6_85ew6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_85ew6"]
+albedo_texture = ExtResource("4_w8p06")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdjno"]
+albedo_texture = ExtResource("4_dqf3w")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mirec"]
+albedo_texture = ExtResource("4_dqf3w")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03wb3"]
+albedo_texture = ExtResource("4_w8p06")
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1566547364]
+script = ExtResource("1_fpdgu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1490986224]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.6195528, 0)
+top_level = true
+shape = SubResource("CapsuleShape3D_fpdgu")
+
+[node name="Muryotaisu" parent="." unique_id=1919124526 instance=ExtResource("1_n73jj")]
+
+[node name="Skeleton3D" parent="Muryotaisu/Armature" parent_id_path=PackedInt32Array(1919124526, 19389995) index="0" unique_id=302117829]
+bones/1/position = Vector3(5.884182e-15, 0.6343805, -0.004931507)
+bones/2/rotation = Quaternion(-0.057172775, -8.929693e-14, -1.3631061e-08, 0.9983643)
+bones/3/rotation = Quaternion(-0.058637846, 1.7689633e-14, -1.3980358e-08, 0.99827933)
+bones/5/rotation = Quaternion(0.050034307, -1.19059976e-07, 5.964562e-09, 0.9987475)
+bones/8/rotation = Quaternion(-0.29479367, 0.024688337, 0.9511919, -0.08787145)
+bones/9/rotation = Quaternion(0.3020908, 0.0705008, 0.9488996, -0.057969227)
+bones/10/rotation = Quaternion(-0.2221345, 0.06755602, 0.97265124, -0.0064810235)
+bones/11/rotation = Quaternion(0.22338018, 0.07890061, 0.9705341, -0.044042006)
+bones/13/rotation = Quaternion(0.89319134, -0.030059855, -0.060391042, -0.44458818)
+bones/15/rotation = Quaternion(0.06789806, -0.118753, -0.5278346, 0.83825916)
+bones/16/rotation = Quaternion(0.047363136, 4.195661e-09, -1.3985537e-09, 0.99887776)
+bones/17/rotation = Quaternion(1.2572855e-08, 4.656615e-10, 6.519258e-09, 1)
+bones/18/rotation = Quaternion(0.15771368, 0.010575524, -0.05554109, 0.985865)
+bones/19/rotation = Quaternion(-0.025337212, -0.005480158, 0.0069684177, 0.9996397)
+bones/20/rotation = Quaternion(-0.053800784, 0.0059356187, 0.0071768574, 0.9985083)
+bones/21/rotation = Quaternion(0.039720684, 0.0007144161, -0.017258916, 0.9990616)
+bones/22/rotation = Quaternion(-0.001268796, -4.572443e-05, -0.06322033, 0.99799883)
+bones/23/rotation = Quaternion(-0.000115142175, -4.4599925e-05, -0.10220609, 0.99476326)
+bones/24/rotation = Quaternion(3.2609289e-09, 1.2484698e-07, -0.028233318, 0.99960136)
+bones/25/rotation = Quaternion(3.3828895e-09, 9.332108e-10, -0.063583, 0.99797654)
+bones/26/rotation = Quaternion(-8.4855045e-10, 8.192901e-10, -0.10329592, 0.99465066)
+bones/27/rotation = Quaternion(-0.01420452, 2.9052462e-05, -0.05861523, 0.9981796)
+bones/28/rotation = Quaternion(1.1577775e-07, -1.013478e-06, -0.06375098, 0.99796593)
+bones/29/rotation = Quaternion(-1.2510987e-08, -7.218444e-07, -0.10357105, 0.99462205)
+bones/30/rotation = Quaternion(-0.06327252, 0.0023782225, -0.094592474, 0.99350053)
+bones/31/rotation = Quaternion(1.7719762e-07, -4.1514872e-06, -0.06394853, 0.9979533)
+bones/32/rotation = Quaternion(9.033246e-08, 2.2826857e-06, -0.103897005, 0.9945881)
+bones/33/rotation = Quaternion(0.03212247, -0.03212263, 0.70637673, 0.7063769)
+bones/34/rotation = Quaternion(-0.07005775, -0.12111209, 0.52337915, 0.8405344)
+bones/35/rotation = Quaternion(0.05304466, 2.331589e-09, 1.21242625e-08, 0.99859214)
+bones/36/rotation = Quaternion(2.328306e-09, -1.110223e-16, 6.519258e-09, 1)
+bones/37/rotation = Quaternion(0.15771379, -0.010575489, 0.05554112, 0.985865)
+bones/38/rotation = Quaternion(-0.02533726, 0.005480144, -0.006968408, 0.9996397)
+bones/39/rotation = Quaternion(-0.05380081, -0.0059356117, -0.0071768835, 0.9985083)
+bones/40/rotation = Quaternion(0.03972066, -0.00071441376, 0.017258981, 0.9990616)
+bones/41/rotation = Quaternion(-0.0012687879, 4.5724908e-05, 0.063220344, 0.99799883)
+bones/42/rotation = Quaternion(-0.00011513898, 4.460061e-05, 0.1022061, 0.99476326)
+bones/43/rotation = Quaternion(-1.1646176e-08, -1.2112022e-07, 0.028233338, 0.99960136)
+bones/44/rotation = Quaternion(-3.966147e-09, 9.332107e-10, 0.06358302, 0.99797654)
+bones/45/rotation = Quaternion(4.330533e-09, -2.8089941e-09, 0.103295885, 0.99465066)
+bones/46/rotation = Quaternion(-0.0142045235, -2.9050334e-05, 0.058615237, 0.99817955)
+bones/47/rotation = Quaternion(9.822152e-08, 1.0106785e-06, 0.06375102, 0.99796593)
+bones/48/rotation = Quaternion(-2.6433838e-08, 7.242731e-07, 0.10357104, 0.99462205)
+bones/49/rotation = Quaternion(-0.06327254, -0.0023782249, 0.09459251, 0.99350053)
+bones/50/rotation = Quaternion(1.8139717e-07, 4.1524204e-06, 0.063948534, 0.9979533)
+bones/51/rotation = Quaternion(7.935907e-08, -2.27894e-06, 0.103897005, 0.9945881)
+bones/52/rotation = Quaternion(-0.037614096, 0.039950002, 0.9895232, -0.13354057)
+bones/53/rotation = Quaternion(-0.007657636, -0.0003394489, -0.05399947, 0.99851155)
+bones/54/rotation = Quaternion(-0.020403562, -0.047471438, -0.037003294, 0.99797845)
+bones/55/rotation = Quaternion(0.04333391, -0.12803437, 0.9907649, 0.010690559)
+bones/56/rotation = Quaternion(-0.14029115, 3.3818413e-08, 1.2081155e-08, 0.9901103)
+bones/57/rotation = Quaternion(0.49958628, -0.00022944066, 0.0021603834, 0.86626154)
+bones/58/rotation = Quaternion(0.04135301, 0.2598489, 0.9647501, -0.005080703)
+bones/59/rotation = Quaternion(-0.00329215, 3.0785354e-09, -1.2391678e-08, 0.9999946)
+bones/60/rotation = Quaternion(0.28195673, -4.5904574e-07, 7.659214e-07, 0.9594272)
+
+[node name="Face" parent="Muryotaisu/Armature/Skeleton3D" index="0" unique_id=503698222]
+visible = false
+blend_shapes/Idle = 1.0
+surface_material_override/0 = SubResource("StandardMaterial3D_n73jj")
+
+[node name="EyeLash" parent="Muryotaisu/Armature/Skeleton3D" index="1" unique_id=1667816701]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_fpdgu")
+
+[node name="Body" parent="Muryotaisu/Armature/Skeleton3D" index="2" unique_id=909593060]
+surface_material_override/0 = SubResource("StandardMaterial3D_b2cqe")
+
+[node name="Hair" parent="Muryotaisu/Armature/Skeleton3D" index="3" unique_id=414750566]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_dqf3w")
+
+[node name="Coat" parent="Muryotaisu/Armature/Skeleton3D" index="4" unique_id=1810662181]
+surface_material_override/0 = SubResource("StandardMaterial3D_85ew6")
+
+[node name="Eye" parent="Muryotaisu/Armature/Skeleton3D" index="5" unique_id=330405883]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_fdjno")
+
+[node name="EyeLight" parent="Muryotaisu/Armature/Skeleton3D" index="6" unique_id=1330202702]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_mirec")
+
+[node name="AngelRing" parent="Muryotaisu/Armature/Skeleton3D" index="7" unique_id=1100316730]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_03wb3")
+
+[node name="head" type="Node3D" parent="." unique_id=1953410841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=1782364461]
+transform = Transform3D(-0.99909854, 0, 0.04245111, 0, 1, 0, -0.04245111, 0, -0.99909854, 0, 0.16699207, 0.1699323)
+current = true
+
+[editable path="Muryotaisu"]
