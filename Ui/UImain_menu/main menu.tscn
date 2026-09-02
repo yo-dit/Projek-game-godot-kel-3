@@ -1,0 +1,448 @@
+[gd_scene format=3 uid="uid://bkcovndpiosjf"]
+
+[ext_resource type="Script" uid="uid://dfqrtgy8tw7fs" path="res://UImain_menu/main_menu.gd" id="1_5gvum"]
+[ext_resource type="Texture2D" uid="uid://y4uj32ytx3c2" path="res://assets/placeholder.png" id="2_5gvum"]
+[ext_resource type="AudioStream" uid="uid://bgo0jsc1re8v2" path="res://assets/BgAmbience.ogg" id="3_wq7ea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iv0vr"]
+atlas = ExtResource("2_5gvum")
+
+[sub_resource type="Animation" id="Animation_bajiw"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CreditMenu/ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(735, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CreditMenu/ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionMenu/ColorRect:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(735, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionMenu/ColorRect:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Background:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_qqwyt"]
+resource_name = "popup_close"
+length = 0.4
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CreditMenu/ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(735, -0.2, 0, 0.2, 0, 1152, -0.06666667, -69.5, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CreditMenu/ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 0, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionMenu/ColorRect:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(735, -0.2, 0, 0.2, 0, 1152, -0.06666667, -69.5, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionMenu/ColorRect:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 0, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+
+[sub_resource type="Animation" id="Animation_f0j1r"]
+resource_name = "popup_open"
+length = 0.4
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CreditMenu/ColorRect:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1152, -0.2, 0, 0.2, 0, 735, -0.06666667, 69.5, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CreditMenu/ColorRect:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 0, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionMenu/ColorRect:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1152, -0.2, 0, 0.2, 0, 735, -0.06666667, 69.5, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionMenu/ColorRect:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.2, 0, 0.2, 0, 0, -0.06666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iv0vr"]
+_data = {
+&"RESET": SubResource("Animation_bajiw"),
+&"popup_close": SubResource("Animation_qqwyt"),
+&"popup_open": SubResource("Animation_f0j1r")
+}
+
+[sub_resource type="Animation" id="Animation_5gvum"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-97, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_wq7ea"]
+resource_name = "bg_move"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -97, -0.5, 16.166666, 0, 0, -7.6293945e-06, -0.5, -16.166666, 0, 0),
+"times": PackedFloat32Array(0, 3, 6)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.5, 0, 0, 0, 0, -0.5, 0, 0, 0),
+"times": PackedFloat32Array(0, 3, 6)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_btgkm"]
+_data = {
+&"RESET": SubResource("Animation_5gvum"),
+&"bg_move": SubResource("Animation_wq7ea")
+}
+
+[node name="MainMenu" type="Control" unique_id=855713422]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5gvum")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1439905755]
+layout_mode = 0
+offset_left = -97.0
+offset_right = 1823.0
+offset_bottom = 1080.0
+scale = Vector2(0.65, 0.65)
+texture = SubResource("AtlasTexture_iv0vr")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=589958582]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.23921569)
+
+[node name="Title" type="Label" parent="." unique_id=214511134]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 135.0
+offset_top = -188.0
+offset_right = 226.0
+offset_bottom = -165.0
+grow_vertical = 2
+scale = Vector2(4, 4)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+text = "DUSAT-OUT"
+horizontal_alignment = 1
+
+[node name="MenuOptions" type="VBoxContainer" parent="." unique_id=326309191]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 305.0
+offset_right = 315.0
+offset_bottom = 412.0
+scale = Vector2(2, 2)
+theme_override_constants/separation = 7
+
+[node name="StartButton" type="Button" parent="MenuOptions" unique_id=1536573339]
+layout_mode = 2
+text = "Start"
+
+[node name="OptionButton" type="Button" parent="MenuOptions" unique_id=2069203789]
+layout_mode = 2
+text = "Option"
+
+[node name="CreditButton" type="Button" parent="MenuOptions" unique_id=1339971390]
+layout_mode = 2
+text = "Credit
+"
+
+[node name="QuitButton" type="Button" parent="MenuOptions" unique_id=1439906367]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="CreditMenu" type="Control" parent="." unique_id=2125163223]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CreditMenu" unique_id=912480876]
+layout_mode = 0
+offset_left = 735.0
+offset_right = 775.00024
+offset_bottom = 40.0
+scale = Vector2(10.44, 16.28)
+color = Color(0.050510764, 0.050510757, 0.050510757, 0.57254905)
+
+[node name="Title" type="Label" parent="CreditMenu/ColorRect" unique_id=1230706755]
+layout_mode = 0
+offset_left = 14.272032
+offset_top = 4.2288556
+offset_right = 78.27203
+offset_bottom = 27.228855
+scale = Vector2(0.18390787, 0.119403005)
+text = "CREDITS"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CreditMenu/ColorRect" unique_id=584416067]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -17.509699
+offset_top = -29.004915
+offset_right = 282.4903
+offset_bottom = 270.9951
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.12, 0.08)
+
+[node name="Credits" type="Label" parent="CreditMenu/ColorRect/ScrollContainer" unique_id=1248227295]
+layout_mode = 2
+text = "DUSAT-OUT
+
+DIREKSI & DESAIN
+Ui: Rionaldo Aditya
+Map: Tyara Kasih
+
+PEMROGRAMAN
+Gameplay & Systems: Ambas Elkan, M
+
+AUDIO
+Sound Designer: Tyara Kasih
+Foley Artist:Irna Fauziah. A
+
+
+KONTRIBUSI ASET PIHAK KETIGA
+Asset 3D & Lingkungan:
+
+Audio & Musik:
+
+TERIMAKASIH KHUSUS
+Pak Maul
+SMKN 21
+Komunitas Godot Engine Indonesia"
+
+[node name="OptionMenu" type="Control" parent="." unique_id=764760049]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="OptionMenu" unique_id=1270362112]
+layout_mode = 0
+offset_left = 735.0
+offset_right = 775.0
+offset_bottom = 40.0
+scale = Vector2(10.44, 16.28)
+color = Color(0.050510764, 0.050510757, 0.050510757, 0.57254905)
+
+[node name="Title" type="Label" parent="OptionMenu/ColorRect" unique_id=45631873]
+layout_mode = 0
+offset_left = 14.272032
+offset_top = 4.2288556
+offset_right = 78.27203
+offset_bottom = 27.228855
+scale = Vector2(0.18390787, 0.119403005)
+text = "OPTIONS"
+
+[node name="BGMLabel" type="Label" parent="OptionMenu/ColorRect" unique_id=1378066130]
+layout_mode = 0
+offset_left = 14.272028
+offset_top = 6.9410315
+offset_right = 157.27203
+offset_bottom = 29.941032
+scale = Vector2(0.088, 0.062)
+text = "Background Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BGMSlider" type="HSlider" parent="OptionMenu/ColorRect" unique_id=1491030193]
+layout_mode = 0
+offset_left = 10.344833
+offset_top = 9.889434
+offset_right = 210.34483
+offset_bottom = 25.889435
+scale = Vector2(0.1, 0.07)
+value = 50.0
+
+[node name="SFXLabel" type="Label" parent="OptionMenu/ColorRect" unique_id=2094281003]
+layout_mode = 0
+offset_left = 14.272028
+offset_top = 15.78624
+offset_right = 157.27203
+offset_bottom = 38.78624
+scale = Vector2(0.088, 0.062)
+text = "Sound Effects"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="OptionMenu/ColorRect" unique_id=63768558]
+layout_mode = 0
+offset_left = 10.344833
+offset_top = 18.734642
+offset_right = 210.34483
+offset_bottom = 34.734642
+scale = Vector2(0.1, 0.07)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1872147324]
+libraries/ = SubResource("AnimationLibrary_iv0vr")
+
+[node name="BackgroundAnimator" type="AnimationPlayer" parent="." unique_id=1662715244]
+libraries/ = SubResource("AnimationLibrary_btgkm")
+
+[node name="BgAmbience" type="AudioStreamPlayer" parent="." unique_id=1917970756]
+stream = ExtResource("3_wq7ea")
+autoplay = true
+parameters/looping = true
+
+[node name="QuitConfirmation" type="ConfirmationDialog" parent="." unique_id=815289468]
+title = "Quit Game"
+ok_button_text = "Yes"
