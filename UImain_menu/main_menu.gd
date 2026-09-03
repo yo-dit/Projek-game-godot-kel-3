@@ -51,7 +51,7 @@ func _ready():
 func _on_start_pressed():
 	print("Start ditekan")
 
-	get_tree().change_scene_to_file("res://node.tscn")
+	get_tree().change_scene_to_file("res://Map/Map.tscn")
 
 
 func _on_option_pressed():

@@ -1,11 +1,76 @@
 [gd_scene format=3 uid="uid://bkcovndpiosjf"]
 
 [ext_resource type="Script" uid="uid://dfqrtgy8tw7fs" path="res://UImain_menu/main_menu.gd" id="1_5gvum"]
-[ext_resource type="Texture2D" uid="uid://cv0q4hwoo03b0" path="res://assets/placeholder.png" id="2_5gvum"]
+[ext_resource type="Shader" uid="uid://bmkp3bxdpvfdl" path="res://UImain_menu/main menu.gdshader" id="2_btgkm"]
+[ext_resource type="Texture2D" uid="uid://mi3yqtk5ugih" path="res://assets/bg.jpg" id="2_cfmtm"]
 [ext_resource type="AudioStream" uid="uid://g7vu6q8x831o" path="res://assets/BgAmbience.ogg" id="3_wq7ea"]
+[ext_resource type="FontFile" uid="uid://lcql6vb54ymw" path="res://assets/Ghost Shadow.ttf" id="4_cfmtm"]
+[ext_resource type="FontFile" uid="uid://p1o2rrlypptx" path="res://assets/Stranger back in the Night.ttf" id="5_qrshg"]
+[ext_resource type="Texture2D" uid="uid://byeaxo4tdfno7" path="res://assets/stroke.png" id="6_nsuim"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_iv0vr"]
-atlas = ExtResource("2_5gvum")
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ce74"]
+atlas = ExtResource("2_cfmtm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_btgkm"]
+shader = ExtResource("2_btgkm")
+shader_parameter/vignette_strength = 0.25
+shader_parameter/vignette_size = 0.35
+shader_parameter/scanline_size = 4.0
+shader_parameter/scanline_strength = 0.18
+shader_parameter/curvature = 0.06
+shader_parameter/distortion_strength = 0.006
+shader_parameter/distortion_speed = 5.0
+shader_parameter/grain_strength = 0.02
+shader_parameter/grain_speed = 15.0
+shader_parameter/flicker_strength = 0.025
+shader_parameter/flicker_speed = 8.0
+shader_parameter/fog_strength = 0.08
+shader_parameter/fog_speed = 0.025
+shader_parameter/fog_scale = 2.5
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mti6b"]
+texture = ExtResource("6_nsuim")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_65xwo"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.627451)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r8qnq"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.88235295)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6vnta"]
+texture = ExtResource("6_nsuim")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ce74"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.627451)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t0p64"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.88235295)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uhlbl"]
+texture = ExtResource("6_nsuim")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8rs23"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.627451)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_adnyj"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.88235295)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3e7fk"]
+texture = ExtResource("6_nsuim")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tcgj0"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.627451)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cilax"]
+texture = ExtResource("6_nsuim")
+modulate_color = Color(1, 1, 1, 0.88235295)
 
 [sub_resource type="Animation" id="Animation_bajiw"]
 length = 0.001
@@ -252,10 +317,11 @@ offset_left = -97.0
 offset_right = 1823.0
 offset_bottom = 1080.0
 scale = Vector2(0.65, 0.65)
-texture = SubResource("AtlasTexture_iv0vr")
+texture = SubResource("AtlasTexture_1ce74")
 expand_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=589958582]
+material = SubResource("ShaderMaterial_btgkm")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -269,41 +335,62 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 135.0
-offset_top = -188.0
-offset_right = 226.0
-offset_bottom = -165.0
+offset_left = 60.0
+offset_top = -163.0
+offset_right = 576.0
+offset_bottom = -78.0
 grow_vertical = 2
-scale = Vector2(4, 4)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_cfmtm")
+theme_override_font_sizes/font_size = 80
 text = "DUSAT-OUT"
 horizontal_alignment = 1
 
 [node name="MenuOptions" type="VBoxContainer" parent="." unique_id=326309191]
 layout_mode = 0
 offset_left = 115.0
-offset_top = 305.0
+offset_top = 275.0
 offset_right = 315.0
-offset_bottom = 412.0
+offset_bottom = 432.0
 scale = Vector2(2, 2)
-theme_override_constants/separation = 7
+theme_override_constants/separation = -1
 
 [node name="StartButton" type="Button" parent="MenuOptions" unique_id=1536573339]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_mti6b")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_65xwo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r8qnq")
 text = "Start"
+icon_alignment = 1
+expand_icon = true
 
 [node name="OptionButton" type="Button" parent="MenuOptions" unique_id=2069203789]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_6vnta")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1ce74")
+theme_override_styles/hover = SubResource("StyleBoxTexture_t0p64")
 text = "Option"
 
 [node name="CreditButton" type="Button" parent="MenuOptions" unique_id=1339971390]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_uhlbl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_8rs23")
+theme_override_styles/hover = SubResource("StyleBoxTexture_adnyj")
 text = "Credit
 "
 
 [node name="QuitButton" type="Button" parent="MenuOptions" unique_id=1439906367]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_3e7fk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_tcgj0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cilax")
 text = "Quit
 "
 
@@ -316,18 +403,19 @@ offset_bottom = 40.0
 [node name="ColorRect" type="ColorRect" parent="CreditMenu" unique_id=912480876]
 layout_mode = 0
 offset_left = 735.0
-offset_right = 775.00024
-offset_bottom = 40.0
-scale = Vector2(10.44, 16.28)
+offset_right = 1155.0
+offset_bottom = 648.0
 color = Color(0.050510764, 0.050510757, 0.050510757, 0.57254905)
 
 [node name="Title" type="Label" parent="CreditMenu/ColorRect" unique_id=1230706755]
-layout_mode = 0
-offset_left = 14.272032
-offset_top = 4.2288556
-offset_right = 78.27203
-offset_bottom = 27.228855
+layout_mode = 1
+offset_left = 133.0
+offset_top = 86.0
+offset_right = 1027.0
+offset_bottom = 295.0
 scale = Vector2(0.18390787, 0.119403005)
+theme_override_fonts/font = ExtResource("4_cfmtm")
+theme_override_font_sizes/font_size = 200
 text = "CREDITS"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CreditMenu/ColorRect" unique_id=584416067]
@@ -337,17 +425,18 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -17.509699
-offset_top = -29.004915
-offset_right = 282.4903
-offset_bottom = 270.9951
+offset_left = -147.0
+offset_top = -512.0
+offset_right = 153.0
+offset_bottom = -62.0
 grow_horizontal = 2
 grow_vertical = 0
-scale = Vector2(0.12, 0.08)
 offset_transform_enabled = true
 
 [node name="Credits" type="Label" parent="CreditMenu/ColorRect/ScrollContainer" unique_id=1248227295]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
 text = "DUSAT-OUT
 
 DIREKSI & DESAIN
@@ -380,58 +469,59 @@ offset_bottom = 40.0
 [node name="ColorRect" type="ColorRect" parent="OptionMenu" unique_id=1270362112]
 layout_mode = 0
 offset_left = 735.0
-offset_right = 775.0
-offset_bottom = 40.0
-scale = Vector2(10.44, 16.28)
+offset_right = 1155.0
+offset_bottom = 648.0
 color = Color(0.050510764, 0.050510757, 0.050510757, 0.57254905)
 
 [node name="Title" type="Label" parent="OptionMenu/ColorRect" unique_id=45631873]
 layout_mode = 0
-offset_left = 14.272032
-offset_top = 4.2288556
-offset_right = 78.27203
-offset_bottom = 27.228855
+offset_left = 133.0
+offset_top = 86.0
+offset_right = 1008.0
+offset_bottom = 295.0
 scale = Vector2(0.18390787, 0.119403005)
+theme_override_fonts/font = ExtResource("4_cfmtm")
+theme_override_font_sizes/font_size = 200
 text = "OPTIONS"
 
 [node name="BGMLabel" type="Label" parent="OptionMenu/ColorRect" unique_id=1378066130]
 layout_mode = 0
-offset_left = 14.272028
-offset_top = 6.9410315
-offset_right = 157.27203
-offset_bottom = 29.941032
-scale = Vector2(0.088, 0.062)
+offset_left = 133.0
+offset_top = 136.0
+offset_right = 281.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 50
 text = "Background Music"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BGMSlider" type="HSlider" parent="OptionMenu/ColorRect" unique_id=1491030193]
 layout_mode = 0
-offset_left = 10.344833
-offset_top = 9.889434
-offset_right = 210.34483
-offset_bottom = 25.889435
-scale = Vector2(0.1, 0.07)
+offset_left = 86.999985
+offset_top = 208.0
+offset_right = 337.0
+offset_bottom = 224.0
 value = 50.0
 
 [node name="SFXLabel" type="Label" parent="OptionMenu/ColorRect" unique_id=2094281003]
 layout_mode = 0
-offset_left = 14.272028
-offset_top = 15.78624
-offset_right = 157.27203
-offset_bottom = 38.78624
-scale = Vector2(0.088, 0.062)
+offset_left = 168.0
+offset_top = 246.0
+offset_right = 256.0
+offset_bottom = 286.0
+theme_override_fonts/font = ExtResource("5_qrshg")
+theme_override_font_sizes/font_size = 40
 text = "Sound Effects"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SFXSlider" type="HSlider" parent="OptionMenu/ColorRect" unique_id=63768558]
 layout_mode = 0
-offset_left = 10.344833
-offset_top = 18.734642
-offset_right = 210.34483
-offset_bottom = 34.734642
-scale = Vector2(0.1, 0.07)
+offset_left = 86.999985
+offset_top = 310.0
+offset_right = 337.0
+offset_bottom = 326.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1872147324]
 libraries/ = SubResource("AnimationLibrary_iv0vr")
