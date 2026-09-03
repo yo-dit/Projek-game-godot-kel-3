@@ -1,0 +1,227 @@
+[gd_scene format=3 uid="uid://djletdnie8v54"]
+
+[ext_resource type="ArrayMesh" uid="uid://mu1uur004mha" path="res://Map/HospitalHorrorPack/Models/SM_Floor_01.obj" id="1_jqjl4"]
+[ext_resource type="Texture2D" uid="uid://dk0b37a62tv2u" path="res://Map/HospitalHorrorPack/Textures/T_Tile01_C.tga" id="2_7p72q"]
+[ext_resource type="ArrayMesh" uid="uid://cig0vxgeggfrp" path="res://Map/HospitalHorrorPack/Models/SM_Floor_02.obj" id="3_ysmov"]
+[ext_resource type="PackedScene" uid="uid://bsjklny4t0r53" path="res://Character/character_body_3d.tscn" id="4_wao14"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7aqjv"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_q2sl3"]
+
+[sub_resource type="Sky" id="Sky_ohl31"]
+sky_material = SubResource("PhysicalSkyMaterial_q2sl3")
+
+[sub_resource type="Environment" id="Environment_o0xu3"]
+background_mode = 2
+sky = SubResource("Sky_ohl31")
+ambient_light_source = 3
+reflected_light_source = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysmov"]
+albedo_texture = ExtResource("2_7p72q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jqjl4"]
+albedo_texture = ExtResource("2_7p72q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7p72q"]
+albedo_texture = ExtResource("2_7p72q")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_l4y8y"]
+data = PackedVector3Array(-1.4937999, 0, -1.8580999, -0.89409995, 0, -1.7918999, -1.4937999, 0, -1.7918999, -0.89409995, 0, -1.7918999, -0.89409995, 0, -0.89269996, -1.4937999, 0, -1.7918999, -0.89409995, 0, -1.7918999, -0.59959996, 0, -0.89269996, -0.89409995, 0, -0.89269996, -0.59959996, 0, -0.89269996, -0.89409995, 0, -1.7918999, -0.59959996, 0, -1.7918999, -1.4937999, 0, -1.7918999, -0.89409995, 0, -0.89269996, -2.3906999, 0, -0.89269996, -0.89409995, 0, -0.89269996, -0.89409995, 0, -0.5925, -2.3906999, 0, -0.89269996, -1.7916, 0, -1.7918999, -1.4937999, 0, -1.7918999, -2.3906999, 0, -0.89269996, -1.4937999, 0, -1.7918999, -1.7916, 0, -1.7918999, -1.4937999, 0, -1.8580999, -2.6894999, 0, -0.89269996, -1.7916, 0, -1.7918999, -2.3906999, 0, -0.89269996, -1.7916, 0, -1.7918999, -1.6185, 0, -1.9375, -1.4937999, 0, -1.8580999, -2.6894999, 0, -0.89269996, -1.7916, 0, -2.0887, -1.7916, 0, -1.7918999, -1.7916, 0, -2.0887, -1.6622, 0, -2.0348, -1.7916, 0, -1.7918999, -0.59959996, 0, -0.5925, 0, 0, 0, -0.89409995, 0, -0.5925, -0.59959996, 0, -0.5925, -0.59959996, 0, -0.89269996, 0, 0, 0, -2.3906999, 0, -0.2963, 0, 0, 0, -2.9981, 0, 0, -2.3906999, 0, -0.2963, -2.9981, 0, 0, -2.6894999, 0, -0.2963, -2.9981, 0, 0, -2.9981, 0, -2.9905999, -2.6894999, 0, -0.2963, -1.7916, 0, -2.0887, 0, 0, -2.9905999, -1.4937999, 0, -2.0887, -1.4937999, 0, -2.0887, -0.89409995, 0, -2.0887, -1.4937999, 0, -1.8580999, -0.89409995, 0, -2.0887, -1.4937999, 0, -2.0887, 0, 0, -2.9905999, -0.59959996, 0, -2.0887, -0.89409995, 0, -2.0887, 0, 0, -2.9905999, -0.59959996, 0, -2.0887, 0, 0, -2.9905999, -0.59959996, 0, -1.7918999, -0.6041, -0.011299999, -2.0887, -0.89409995, 0, -2.0887, -0.59959996, 0, -2.0887, -0.89409995, 0, -2.0887, -0.6041, -0.011299999, -2.0887, -0.8986, -0.011299999, -2.0887, -0.89409995, 0, -1.7918999, -0.89409995, 0, -2.0887, -0.8986, -0.011299999, -1.7918999, -0.8986, -0.011299999, -1.7918999, -0.89409995, 0, -2.0887, -0.8986, -0.011299999, -2.0887, -0.59959996, 0, -1.7918999, -0.89409995, 0, -1.7918999, -0.6041, -0.011299999, -1.7918999, -0.6041, -0.011299999, -1.7918999, -0.89409995, 0, -1.7918999, -0.8986, -0.011299999, -1.7918999, -0.6041, -0.011299999, -1.7918999, -0.59959996, 0, -2.0887, -0.59959996, 0, -1.7918999, -0.59959996, 0, -2.0887, -0.6041, -0.011299999, -1.7918999, -0.6041, -0.011299999, -2.0887, -2.3953, -0.011299999, -0.89269996, -2.6894999, 0, -0.89269996, -2.3906999, 0, -0.89269996, -2.6894999, 0, -0.89269996, -2.3953, -0.011299999, -0.89269996, -2.6941, -0.011299999, -0.89269996, -2.3906999, 0, -0.2963, -2.6894999, 0, -0.2963, -2.3953, -0.011299999, -0.2963, -2.3953, -0.011299999, -0.2963, -2.6894999, 0, -0.2963, -2.6941, -0.011299999, -0.2963, -2.3953, -0.011299999, -0.2963, -2.3906999, 0, -0.89269996, -2.3906999, 0, -0.2963, -2.3906999, 0, -0.89269996, -2.3953, -0.011299999, -0.2963, -2.3953, -0.011299999, -0.89269996, -0.6041, -0.011299999, -0.89269996, -0.89409995, 0, -0.89269996, -0.59959996, 0, -0.89269996, -0.89409995, 0, -0.89269996, -0.6041, -0.011299999, -0.89269996, -0.8986, -0.011299999, -0.89269996, -0.89409995, 0, -0.5925, -0.89409995, 0, -0.89269996, -0.8986, -0.011299999, -0.5925, -0.8986, -0.011299999, -0.5925, -0.89409995, 0, -0.89269996, -0.8986, -0.011299999, -0.89269996, -0.59959996, 0, -0.5925, -0.89409995, 0, -0.5925, -0.6041, -0.011299999, -0.5925, -0.6041, -0.011299999, -0.5925, -0.89409995, 0, -0.5925, -0.8986, -0.011299999, -0.5925, -0.6041, -0.011299999, -0.5925, -0.59959996, 0, -0.89269996, -0.59959996, 0, -0.5925, -0.59959996, 0, -0.89269996, -0.6041, -0.011299999, -0.5925, -0.6041, -0.011299999, -0.89269996, -1.4984, -0.0088, -2.0887, -1.7916, 0, -2.0887, -1.4937999, 0, -2.0887, -1.7916, 0, -2.0887, -1.4984, -0.0088, -2.0887, -1.7961999, -0.0088, -2.0887, -1.6622, 0, -2.0348, -1.7916, 0, -2.0887, -1.6667999, -0.0088, -2.0348, -1.6667999, -0.0088, -2.0348, -1.7916, 0, -2.0887, -1.7961999, -0.0088, -2.0887, -1.6185, 0, -1.9375, -1.6622, 0, -2.0348, -1.6230999, -0.0088, -1.9375, -1.6230999, -0.0088, -1.9375, -1.6622, 0, -2.0348, -1.6667999, -0.0088, -2.0348, -1.4937999, 0, -1.8580999, -1.6185, 0, -1.9375, -1.4984, -0.0088, -1.8580999, -1.4984, -0.0088, -1.8580999, -1.6185, 0, -1.9375, -1.6230999, -0.0088, -1.9375, -1.4984, -0.0088, -1.8580999, -1.4937999, 0, -2.0887, -1.4937999, 0, -1.8580999, -1.4937999, 0, -2.0887, -1.4984, -0.0088, -1.8580999, -1.4984, -0.0088, -2.0887, -1.6622, 0, -2.0348, -1.6185, 0, -1.9375, -1.7916, 0, -1.7918999, -0.59959996, 0, -1.7918999, 0, 0, 0, -0.59959996, 0, -0.89269996, 0, 0, -2.9905999, 0, 0, 0, -0.59959996, 0, -1.7918999, 0, 0, 0, -2.3906999, 0, -0.2963, -0.89409995, 0, -0.5925, -2.3906999, 0, -0.89269996, -0.89409995, 0, -0.5925, -2.3906999, 0, -0.2963, 0, 0, -2.9905999, -1.7916, 0, -2.0887, -2.9981, 0, -2.9905999, -1.7916, 0, -2.0887, -2.6894999, 0, -0.89269996, -2.9981, 0, -2.9905999, -2.6894999, 0, -0.2963, -2.9981, 0, -2.9905999, -2.6894999, 0, -0.89269996, -2.6894999, 0, -0.2963, -2.6894999, 0, -0.89269996, -2.6941, -0.011299999, -0.2963, -2.6941, -0.011299999, -0.2963, -2.6894999, 0, -0.89269996, -2.6941, -0.011299999, -0.89269996, -0.89409995, 0, -2.0887, -0.89409995, 0, -1.7918999, -1.4937999, 0, -1.8580999, -0.6041, -0.011299999, -2.0887, -0.8986, -0.011299999, -1.7918999, -0.8986, -0.011299999, -2.0887, -0.8986, -0.011299999, -1.7918999, -0.6041, -0.011299999, -2.0887, -0.6041, -0.011299999, -1.7918999, -0.6041, -0.011299999, -0.5925, -0.8986, -0.011299999, -0.89269996, -0.6041, -0.011299999, -0.89269996, -0.8986, -0.011299999, -0.89269996, -0.6041, -0.011299999, -0.5925, -0.8986, -0.011299999, -0.5925, -2.6941, -0.011299999, -0.2963, -2.6941, -0.011299999, -0.89269996, -2.3953, -0.011299999, -0.89269996, -2.6941, -0.011299999, -0.2963, -2.3953, -0.011299999, -0.89269996, -2.3953, -0.011299999, -0.2963, -1.4984, -0.0088, -2.0887, -1.6230999, -0.0088, -1.9375, -1.6667999, -0.0088, -2.0348, -1.4984, -0.0088, -1.8580999, -1.6230999, -0.0088, -1.9375, -1.4984, -0.0088, -2.0887, -1.7961999, -0.0088, -2.0887, -1.4984, -0.0088, -2.0887, -1.6667999, -0.0088, -2.0348)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jqjl4"]
+data = PackedVector3Array(0, 0, 0, -2.9981, 0, 0, 0, 0, -2.9905999, -2.9981, 0, 0, -2.9981, 0, -2.9905999, 0, 0, -2.9905999)
+
+[node name="MainWorld" type="Node3D" unique_id=1504370063]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2008533424]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5693307, -10, 0)
+size = Vector3(1000, 0, 1000)
+material = SubResource("StandardMaterial3D_7aqjv")
+
+[node name="CharacterBody3D" parent="." unique_id=1566547364 instance=ExtResource("4_wao14")]
+
+[node name="env" type="Node3D" parent="." unique_id=72023613]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="env" unique_id=175140970]
+environment = SubResource("Environment_o0xu3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env" unique_id=446409759]
+transform = Transform3D(1, 0, 0, 0, 0.81881595, 0.5740562, 0, -0.5740562, 0.81881595, -0.3158636, 12.613522, -0.40261555)
+
+[node name="Lantaiutama" type="MeshInstance3D" parent="." unique_id=1286801391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama" unique_id=1828594649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/SmFloor02" unique_id=992756225]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/SmFloor02/StaticBody3D" unique_id=637522182]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama" unique_id=1070706330]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/StaticBody3D" unique_id=1492360305]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="SmFloor01" type="MeshInstance3D" parent="Lantaiutama" unique_id=1852407516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9975455, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/SmFloor01" unique_id=1575747075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/SmFloor01/SmFloor02" unique_id=405858200]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/SmFloor01/SmFloor02/StaticBody3D" unique_id=166551737]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/SmFloor01" unique_id=1646937033]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/SmFloor01/StaticBody3D" unique_id=1554507260]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="Lantaiutama" type="MeshInstance3D" parent="Lantaiutama" unique_id=257794641]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.941374, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama" unique_id=644494511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama/SmFloor02" unique_id=17100659]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama/SmFloor02/StaticBody3D" unique_id=108864920]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama" unique_id=735476498]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama/StaticBody3D" unique_id=1175168520]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="SmFloor01" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama" unique_id=433154389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9975455, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama/SmFloor01" unique_id=2067169109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama/SmFloor01/SmFloor02" unique_id=471106275]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama/SmFloor01/SmFloor02/StaticBody3D" unique_id=1386174778]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama/SmFloor01" unique_id=1631784597]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama/SmFloor01/StaticBody3D" unique_id=2013934770]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="Lantaiutama2" type="MeshInstance3D" parent="Lantaiutama" unique_id=2077803749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014, 0, -5.849655)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2" unique_id=1549358347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/SmFloor02" unique_id=861376507]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/SmFloor02/StaticBody3D" unique_id=2014821758]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2" unique_id=1706165168]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/StaticBody3D" unique_id=2015875159]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="SmFloor01" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2" unique_id=1425838376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9975455, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2/SmFloor01" unique_id=1945430575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/SmFloor01/SmFloor02" unique_id=1957679684]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/SmFloor01/SmFloor02/StaticBody3D" unique_id=771873061]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/SmFloor01" unique_id=2066984341]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/SmFloor01/StaticBody3D" unique_id=1640689131]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="Lantaiutama" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2" unique_id=364045363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.941374, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama" unique_id=932032783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor02" unique_id=1971615734]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor02/StaticBody3D" unique_id=212637371]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama" unique_id=135554799]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/StaticBody3D" unique_id=341581897]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
+
+[node name="SmFloor01" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama" unique_id=1033336280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9975455, 0, -0.011137962)
+mesh = ExtResource("1_jqjl4")
+surface_material_override/0 = SubResource("StandardMaterial3D_ysmov")
+
+[node name="SmFloor02" type="MeshInstance3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor01" unique_id=1740573637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0045034867, 0, 2.9471254)
+mesh = ExtResource("3_ysmov")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jqjl4")
+surface_material_override/1 = SubResource("StandardMaterial3D_7p72q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor01/SmFloor02" unique_id=747644425]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor01/SmFloor02/StaticBody3D" unique_id=1470982147]
+shape = SubResource("ConcavePolygonShape3D_l4y8y")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor01" unique_id=1894448900]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantaiutama/Lantaiutama2/Lantaiutama/SmFloor01/StaticBody3D" unique_id=1726455998]
+shape = SubResource("ConcavePolygonShape3D_jqjl4")
