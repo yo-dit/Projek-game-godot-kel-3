@@ -2,9 +2,11 @@ extends CharacterBody3D
 
 @export var walk_speed := 3.0
 @export var sprint_speed := 5.0
-@export var jump_velocity := 3.0
+@export var jump_velocity := 3.5
 @export var mouse_sensitivity := 0.002
 
+@onready var footstep_audio = $FootstepAudio
+@onready var footstep_sprint_audio = $FootstepAudioSprint
 @onready var head = $head
 @onready var animation_player = $Muryotaisu/AnimationPlayer
 
@@ -48,7 +50,7 @@ func _physics_process(delta):
 	)
 
 	var direction := (
-	transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)
+		transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)
 	).normalized()
 
 	# SPEED
@@ -66,6 +68,22 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, speed * 8 * delta)
 
 	move_and_slide()
+
+	# FOOTSTEP
+	var sedang_berjalan = is_on_floor() and Vector2(velocity.x, velocity.z).length() > 0.1
+
+	if sedang_berjalan:
+		if Input.is_action_pressed("sprint"):
+			if not footstep_sprint_audio.playing:
+				footstep_audio.stop()
+				footstep_sprint_audio.play()
+		else:
+			if not footstep_audio.playing:
+				footstep_sprint_audio.stop()
+				footstep_audio.play()
+	else:
+		footstep_audio.stop()
+		footstep_sprint_audio.stop()
 
 	# UPDATE ANIMATION
 	update_animation()

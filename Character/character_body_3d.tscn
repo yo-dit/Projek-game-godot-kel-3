@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://lpoiiu0oig6r" path="res://Character/Mryotaisu/Models/Materials/HairIllum.png" id="4_dqf3w"]
 [ext_resource type="Texture2D" uid="uid://cawjict8dbclu" path="res://Character/Mryotaisu/Models/Materials/BodyAo.png" id="4_w8p06"]
 [ext_resource type="Texture2D" uid="uid://q8aqo0ooalr" path="res://Character/Mryotaisu/Models/Materials/Hair.png" id="6_85ew6"]
+[ext_resource type="AudioStream" uid="uid://bj224w0ib47sl" path="res://Character/Audio/freesound_community-concrete_female_heels-6788.mp3" id="8_dqf3w"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fpdgu"]
 height = 2.5195313
@@ -139,5 +140,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=1782364461]
 transform = Transform3D(-0.99909854, 0, 0.04245111, 0, 1, 0, -0.04245111, 0, -0.99909854, 0, 0.16699207, 0.1699323)
 current = true
+
+[node name="FootstepAudio" type="AudioStreamPlayer3D" parent="." unique_id=96825375]
+
+[node name="FreesoundCommunityConcreteFemaleHeels6788" type="AudioStreamPlayer" parent="FootstepAudio" unique_id=165254515]
+stream = ExtResource("8_dqf3w")
+volume_db = 24.0
+
+[node name="FootstepAudioSprint" type="AudioStreamPlayer3D" parent="." unique_id=1953547368]
 
 [editable path="Muryotaisu"]

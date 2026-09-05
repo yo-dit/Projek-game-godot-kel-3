@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwervmtlykq3c"
+path="res://.godot/imported/Lari sinta.MP3-3eb24745ba13614a1d0b9808c6273fb1.mp3str"
+
+[deps]
+
+source_file="res://Character/Audio/Lari sinta.MP3"
+dest_files=["res://.godot/imported/Lari sinta.MP3-3eb24745ba13614a1d0b9808c6273fb1.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
