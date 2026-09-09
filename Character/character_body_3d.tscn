@@ -9,8 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://q8aqo0ooalr" path="res://Character/Mryotaisu/Models/Materials/Hair.png" id="6_85ew6"]
 [ext_resource type="AudioStream" uid="uid://bj224w0ib47sl" path="res://Character/Audio/freesound_community-concrete_female_heels-6788.mp3" id="8_dqf3w"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fpdgu"]
-height = 2.5195313
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqf3w"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n73jj"]
 albedo_texture = ExtResource("2_ox56g")
@@ -39,12 +38,12 @@ albedo_texture = ExtResource("4_w8p06")
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1566547364]
 script = ExtResource("1_fpdgu")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1490986224]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.6195528, 0)
-top_level = true
-shape = SubResource("CapsuleShape3D_fpdgu")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=248531430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_dqf3w")
 
 [node name="Muryotaisu" parent="." unique_id=1919124526 instance=ExtResource("1_n73jj")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
 
 [node name="Skeleton3D" parent="Muryotaisu/Armature" parent_id_path=PackedInt32Array(1919124526, 19389995) index="0" unique_id=302117829]
 bones/1/position = Vector3(5.884182e-15, 0.6343805, -0.004931507)
@@ -135,7 +134,7 @@ visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_03wb3")
 
 [node name="head" type="Node3D" parent="." unique_id=1953410841]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4659373, 0)
 
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=1782364461]
 transform = Transform3D(-0.99909854, 0, 0.04245111, 0, 1, 0, -0.04245111, 0, -0.99909854, 0, 0.16699207, 0.1699323)
