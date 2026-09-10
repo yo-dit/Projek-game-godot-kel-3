@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://b3pinx7g7276t"]
+
+[ext_resource type="FontFile" uid="uid://lcql6vb54ymw" path="res://assets/Ghost Shadow.ttf" id="1_p81d2"]
+[ext_resource type="FontFile" uid="uid://p1o2rrlypptx" path="res://assets/Stranger back in the Night.ttf" id="2_2nc7s"]
+[ext_resource type="AudioStream" uid="uid://g7vu6q8x831o" path="res://assets/BgAmbience.ogg" id="3_d3xb4"]
+[ext_resource type="AudioStream" uid="uid://dhrcivc12uq6x" path="res://assets/normal-click.mp3" id="4_mxa3g"]
+
+[node name="PauseMenu" type="Control" unique_id=971804449]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=765225114]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -250.0
+offset_right = 350.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Panel" unique_id=2112332678]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -200.0
+offset_right = 65.0
+offset_bottom = -167.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_p81d2")
+theme_override_font_sizes/font_size = 30
+text = "PAUSED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="Panel" unique_id=1977774873]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -325.0
+offset_top = 185.0
+offset_right = -225.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_font_sizes/font_size = 30
+text = "RESUME"
+
+[node name="MainMenuButton" type="Button" parent="Panel" unique_id=1612128353]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 173.0
+offset_top = 185.0
+offset_right = 323.0
+offset_bottom = 224.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_font_sizes/font_size = 30
+text = "RETURN TO MENU"
+
+[node name="BGMLabel" type="Label" parent="." unique_id=1491312114]
+layout_mode = 0
+offset_left = 495.0
+offset_top = 223.0
+offset_right = 643.0
+offset_bottom = 274.0
+theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_font_sizes/font_size = 50
+text = "Background Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BGMSlider" type="HSlider" parent="." unique_id=712464171]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 295.0
+offset_right = 699.0
+offset_bottom = 311.0
+value = 50.0
+
+[node name="SFXLabel" type="Label" parent="." unique_id=1308106228]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 333.0
+offset_right = 618.0
+offset_bottom = 373.0
+theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_font_sizes/font_size = 40
+text = "Sound Effects"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="." unique_id=2126508945]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 397.0
+offset_right = 699.0
+offset_bottom = 413.0
+value = 50.0
+
+[node name="BgAmbience" type="AudioStreamPlayer" parent="." unique_id=1229484157]
+stream = ExtResource("3_d3xb4")
+autoplay = true
+bus = &"BGM"
+parameters/looping = true
+
+[node name="NormalClickSFX" type="AudioStreamPlayer" parent="." unique_id=522999006]
+stream = ExtResource("4_mxa3g")
+bus = &"SFX"
