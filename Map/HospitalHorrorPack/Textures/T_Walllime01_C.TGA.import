@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddgjxluuv2ewi"
-path.s3tc="res://.godot/imported/T_Walllime01_C.TGA-c6a3e0e2ca61f2d023ccdfd3b643cc85.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Walllime01_C.TGA-86e410575a61d34f6f9a4aa26ee5a87f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/HospitalHorrorPack/textures/T_Walllime01_C.TGA"
-dest_files=["res://.godot/imported/T_Walllime01_C.TGA-c6a3e0e2ca61f2d023ccdfd3b643cc85.s3tc.ctex"]
+source_file="res://Map/HospitalHorrorPack/Textures/T_Walllime01_C.TGA"
+dest_files=["res://.godot/imported/T_Walllime01_C.TGA-86e410575a61d34f6f9a4aa26ee5a87f.s3tc.ctex"]
 
 [params]
 
