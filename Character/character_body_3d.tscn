@@ -35,6 +35,8 @@ albedo_texture = ExtResource("4_dqf3w")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03wb3"]
 albedo_texture = ExtResource("4_w8p06")
 
+[sub_resource type="LabelSettings" id="LabelSettings_dqf3w"]
+
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1566547364]
 script = ExtResource("1_fpdgu")
 
@@ -140,6 +142,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4659373, 0)
 transform = Transform3D(-0.99909854, 0, 0.04245111, 0, 1, 0, -0.04245111, 0, -0.99909854, 0, 0.16699207, 0.1699323)
 current = true
 
+[node name="InteractionRay" type="RayCast3D" parent="head/Camera3D" unique_id=460188959]
+target_position = Vector3(0, 0, -3)
+
 [node name="FootstepAudio" type="AudioStreamPlayer3D" parent="." unique_id=96825375]
 
 [node name="FreesoundCommunityConcreteFemaleHeels6788" type="AudioStreamPlayer" parent="FootstepAudio" unique_id=165254515]
@@ -147,5 +152,25 @@ stream = ExtResource("8_dqf3w")
 volume_db = 24.0
 
 [node name="FootstepAudioSprint" type="AudioStreamPlayer3D" parent="." unique_id=1953547368]
+
+[node name="Crosshair" type="CanvasLayer" parent="." unique_id=795040295]
+
+[node name="Label" type="Label" parent="Crosshair" unique_id=1569060829]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -11.5
+offset_right = 5.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "+"
+label_settings = SubResource("LabelSettings_dqf3w")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [editable path="Muryotaisu"]

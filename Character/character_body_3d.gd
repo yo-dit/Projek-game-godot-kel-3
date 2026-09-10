@@ -9,7 +9,7 @@ extends CharacterBody3D
 @onready var footstep_sprint_audio = $FootstepAudioSprint
 @onready var head = $head
 @onready var animation_player = $Muryotaisu/AnimationPlayer
-
+@onready var interaction_ray =$head/Camera3D/InteractionRay
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -36,6 +36,7 @@ func _physics_process(delta):
 	# GRAVITY
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		
 
 	# JUMP - SPACE
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -48,6 +49,10 @@ func _physics_process(delta):
 		"forward",
 		"backward"
 	)
+	#Interaction
+	if interaction_ray.is_colliding():
+		var object = interaction_ray.get_collider()
+		print("Melihat: ", object.name)
 
 	var direction := (
 		transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)

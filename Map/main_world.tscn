@@ -2473,7 +2473,7 @@ skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_tqb3j")
 
 [node name="Door" type="MeshInstance3D" parent="Sekolah/Kelas" unique_id=1181996645]
-transform = Transform3D(-0.77810067, 0, 0.6281396, 0, 0.97277087, 0, -0.6281396, 0, -0.77810067, -0.54533005, 1.6985501, -1.7267623)
+transform = Transform3D(-0.77464235, -0.09161344, 0.6253478, -0.07327983, 0.96844727, 0.05915682, -0.6281396, 0, -0.77810067, -0.54533005, 1.6985501, -1.7267623)
 mesh = SubResource("ArrayMesh_2lrpw")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_wol5j")
