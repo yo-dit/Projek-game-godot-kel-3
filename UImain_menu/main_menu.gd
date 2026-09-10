@@ -14,6 +14,8 @@ extends Control
 
 # Audio
 @onready var bg_ambience = $BgAmbience
+@onready var start_click_sfx = $StartClickSFX
+@onready var normal_click_sfx = $NormalClickSFX
 @onready var bgm_slider = $OptionMenu/ColorRect/BGMSlider
 @onready var sfx_slider = $OptionMenu/ColorRect/SFXSlider
 
@@ -51,11 +53,17 @@ func _ready():
 func _on_start_pressed():
 	print("Start ditekan")
 
+	# SFX Start
+	start_click_sfx.play()
+
 	get_tree().change_scene_to_file("res://Map/Map.tscn")
 
 
 func _on_option_pressed():
 	print("Option ditekan")
+
+	# SFX normal
+	normal_click_sfx.play()
 
 	# Kalau Credits sedang terbuka
 	if credit_menu.visible:
@@ -77,6 +85,9 @@ func _on_option_pressed():
 func _on_credit_pressed():
 	print("Credit ditekan")
 
+	# SFX normal
+	normal_click_sfx.play()
+
 	# Kalau Options sedang terbuka
 	if option_menu.visible:
 		animation_player.play("popup_close")
@@ -97,6 +108,9 @@ func _on_credit_pressed():
 func _on_quit_pressed():
 	print("Quit ditekan")
 
+	# SFX normal
+	normal_click_sfx.play()
+
 	# Tampilkan konfirmasi
 	quit_confirmation.popup_centered()
 
@@ -113,4 +127,5 @@ func _on_bgm_changed(value):
 
 
 func _on_sfx_changed(value):
-	pass
+	start_click_sfx.volume_db = linear_to_db(value / 100.0)
+	normal_click_sfx.volume_db = linear_to_db(value / 100.0)
