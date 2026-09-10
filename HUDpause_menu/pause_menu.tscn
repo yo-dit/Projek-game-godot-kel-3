@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b3pinx7g7276t"]
 
-[ext_resource type="FontFile" uid="uid://lcql6vb54ymw" path="res://assets/Ghost Shadow.ttf" id="1_p81d2"]
-[ext_resource type="FontFile" uid="uid://p1o2rrlypptx" path="res://assets/Stranger back in the Night.ttf" id="2_2nc7s"]
-[ext_resource type="AudioStream" uid="uid://g7vu6q8x831o" path="res://assets/BgAmbience.ogg" id="3_d3xb4"]
-[ext_resource type="AudioStream" uid="uid://dhrcivc12uq6x" path="res://assets/normal-click.mp3" id="4_mxa3g"]
+[ext_resource type="FontFile" uid="uid://lcql6vb54ymw" path="res://assets/Ghost Shadow.ttf" id="1_vg6pu"]
+[ext_resource type="FontFile" uid="uid://p1o2rrlypptx" path="res://assets/Stranger back in the Night.ttf" id="2_uycb6"]
+[ext_resource type="AudioStream" uid="uid://g7vu6q8x831o" path="res://assets/BgAmbience.ogg" id="3_2l6g8"]
+[ext_resource type="AudioStream" uid="uid://dhrcivc12uq6x" path="res://assets/normal-click.mp3" id="4_o7ngh"]
 
 [node name="PauseMenu" type="Control" unique_id=971804449]
 layout_mode = 3
@@ -40,7 +40,7 @@ offset_right = 65.0
 offset_bottom = -167.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_p81d2")
+theme_override_fonts/font = ExtResource("1_vg6pu")
 theme_override_font_sizes/font_size = 30
 text = "PAUSED"
 horizontal_alignment = 1
@@ -59,7 +59,7 @@ offset_right = -225.0
 offset_bottom = 224.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_fonts/font = ExtResource("2_uycb6")
 theme_override_font_sizes/font_size = 30
 text = "RESUME"
 
@@ -76,7 +76,7 @@ offset_right = 323.0
 offset_bottom = 224.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_fonts/font = ExtResource("2_uycb6")
 theme_override_font_sizes/font_size = 30
 text = "RETURN TO MENU"
 
@@ -86,7 +86,7 @@ offset_left = 495.0
 offset_top = 223.0
 offset_right = 643.0
 offset_bottom = 274.0
-theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_fonts/font = ExtResource("2_uycb6")
 theme_override_font_sizes/font_size = 50
 text = "Background Music"
 horizontal_alignment = 1
@@ -106,7 +106,7 @@ offset_left = 530.0
 offset_top = 333.0
 offset_right = 618.0
 offset_bottom = 373.0
-theme_override_fonts/font = ExtResource("2_2nc7s")
+theme_override_fonts/font = ExtResource("2_uycb6")
 theme_override_font_sizes/font_size = 40
 text = "Sound Effects"
 horizontal_alignment = 1
@@ -121,11 +121,11 @@ offset_bottom = 413.0
 value = 50.0
 
 [node name="BgAmbience" type="AudioStreamPlayer" parent="." unique_id=1229484157]
-stream = ExtResource("3_d3xb4")
+stream = ExtResource("3_2l6g8")
 autoplay = true
 bus = &"BGM"
 parameters/looping = true
 
 [node name="NormalClickSFX" type="AudioStreamPlayer" parent="." unique_id=522999006]
-stream = ExtResource("4_mxa3g")
+stream = ExtResource("4_o7ngh")
 bus = &"SFX"

@@ -14,6 +14,10 @@ config/name="ui test"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://UImain_menu/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://m8hl2om6n5qm"
+
 [display]
 
 window/size/mode=3
