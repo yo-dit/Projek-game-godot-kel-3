@@ -9,7 +9,8 @@ extends CharacterBody3D
 @onready var footstep_sprint_audio = $FootstepAudioSprint
 @onready var head = $head
 @onready var animation_player = $Muryotaisu/AnimationPlayer
-@onready var interaction_ray =$head/Camera3D/InteractionRay
+@onready var interaction_ray = $head/Camera3D/InteractionRay
+
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -33,64 +34,129 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta):
+
+	# =========================
+	# INTERACTION
+	# =========================
+
+	if Input.is_action_just_pressed("interact"):
+		print("E DITEKAN")
+
+		if interaction_ray.is_colliding():
+			var object = interaction_ray.get_collider()
+
+			while object:
+				if object.has_method("interact"):
+					print("INTERACT DITEMUKAN DI: ", object.name)
+					object.interact()
+					break
+
+				object = object.get_parent()
+
+
+	# =========================
 	# GRAVITY
+	# =========================
+
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		
 
+
+	# =========================
 	# JUMP - SPACE
+	# =========================
+
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = jump_velocity
 
+
+	# =========================
 	# WASD
+	# =========================
+
 	var input_dir := Input.get_vector(
 		"left",
 		"right",
 		"forward",
 		"backward"
 	)
-	#Interaction
-	if interaction_ray.is_colliding():
-		var object = interaction_ray.get_collider()
-		print("Melihat: ", object.name)
 
 	var direction := (
-		transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)
+		transform.basis * Vector3(
+			-input_dir.x,
+			0,
+			-input_dir.y
+		)
 	).normalized()
 
+
+	# =========================
 	# SPEED
+	# =========================
+
 	var speed := walk_speed
 
 	if Input.is_action_pressed("sprint"):
 		speed = sprint_speed
 
+
+	# =========================
 	# MOVEMENT
+	# =========================
+
 	if direction:
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
+
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed * 8 * delta)
-		velocity.z = move_toward(velocity.z, 0, speed * 8 * delta)
+		velocity.x = move_toward(
+			velocity.x,
+			0,
+			speed * 8 * delta
+		)
+
+		velocity.z = move_toward(
+			velocity.z,
+			0,
+			speed * 8 * delta
+		)
 
 	move_and_slide()
 
+
+	# =========================
 	# FOOTSTEP
-	var sedang_berjalan = is_on_floor() and Vector2(velocity.x, velocity.z).length() > 0.1
+	# =========================
+
+	var sedang_berjalan = (
+		is_on_floor()
+		and Vector2(velocity.x, velocity.z).length() > 0.1
+	)
 
 	if sedang_berjalan:
+
 		if Input.is_action_pressed("sprint"):
+
 			if not footstep_sprint_audio.playing:
 				footstep_audio.stop()
 				footstep_sprint_audio.play()
+
 		else:
+
 			if not footstep_audio.playing:
 				footstep_sprint_audio.stop()
 				footstep_audio.play()
+
 	else:
+
 		footstep_audio.stop()
 		footstep_sprint_audio.stop()
 
+
+	# =========================
 	# UPDATE ANIMATION
+	# =========================
+
 	update_animation()
 
 
@@ -99,13 +165,18 @@ func _physics_process(delta):
 # =====================================
 
 func update_animation():
+
 	if not is_on_floor():
 		animation_player.play("Armature|Jump")
 		return
 
-	var horizontal_velocity := Vector2(velocity.x, velocity.z)
+	var horizontal_velocity := Vector2(
+		velocity.x,
+		velocity.z
+	)
 
 	if horizontal_velocity.length() > 0.1:
 		animation_player.play("Armature|Walk")
+
 	else:
 		animation_player.play("Armature|FaceIdle")

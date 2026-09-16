@@ -613,13 +613,13 @@ shape = SubResource("ConcavePolygonShape3D_ypc4v")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/Floor/SmFloor03/SmFloor02/StaticBody3D" unique_id=218759818]
 shape = SubResource("ConcavePolygonShape3D_6od3y")
 
-[node name="a door1" parent="." unique_id=748144951 instance=ExtResource("5_qtvud")]
+[node name="a door1" parent="." unique_id=53818229 instance=ExtResource("5_qtvud")]
 transform = Transform3D(0.03482968, 0, -0.9993933, 0, 1, 0, 0.9993933, 0, 0.03482968, -3.3780053, 0, -0.045901537)
 
-[node name="Boole" parent="a door1" index="0" unique_id=1167334264]
+[node name="Boole" parent="a door1" index="0" unique_id=2078730958]
 surface_material_override/0 = SubResource("StandardMaterial3D_ypc4v")
 
-[node name="Cube_14" parent="a door1/Boole" index="0" unique_id=1535222308]
+[node name="Cube_14" parent="a door1/Boole" index="0" unique_id=460456478]
 surface_material_override/0 = SubResource("StandardMaterial3D_6od3y")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="a door1/Boole/Cube_14" index="0" unique_id=1854843660]
@@ -627,7 +627,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_6od3y")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="a door1/Boole/Cube_14/StaticBody3D" unique_id=1757693962]
 shape = SubResource("ConcavePolygonShape3D_nlecm")
 
-[node name="Cube_10" parent="a door1/Boole" index="1" unique_id=1681640983]
+[node name="Cube_10" parent="a door1/Boole" index="1" unique_id=1620001258]
 surface_material_override/0 = SubResource("StandardMaterial3D_vxmom")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="a door1/Boole/Cube_10" index="0" unique_id=1569019588]
@@ -640,10 +640,10 @@ shape = SubResource("ConcavePolygonShape3D_vk5l4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="a door1/Boole/StaticBody3D" unique_id=303202701]
 shape = SubResource("ConcavePolygonShape3D_vxmom")
 
-[node name="chair1" parent="." unique_id=454799625 instance=ExtResource("7_ypc4v")]
+[node name="chair1" parent="." unique_id=580567367 instance=ExtResource("7_ypc4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7593484, 0.0012555044, 1.2096442)
 
-[node name="Cube_12" parent="chair1" index="0" unique_id=1200806783]
+[node name="Cube_12" parent="chair1" index="0" unique_id=1571655683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.77212834)
 surface_material_override/0 = SubResource("StandardMaterial3D_nlecm")
 
@@ -652,10 +652,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_nlecm")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="chair1/Cube_12/StaticBody3D" unique_id=812950201]
 shape = SubResource("ConcavePolygonShape3D_cccvd")
 
-[node name="chair1" parent="chair1" unique_id=262226178 instance=ExtResource("7_ypc4v")]
+[node name="chair1" parent="chair1" unique_id=828615229 instance=ExtResource("7_ypc4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.445465, 0.0012555044, -2.1698709)
 
-[node name="Cube_12" parent="chair1/chair1" index="0" unique_id=1200806783]
+[node name="Cube_12" parent="chair1/chair1" index="0" unique_id=1571655683]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.77212834)
 surface_material_override/0 = SubResource("StandardMaterial3D_nlecm")
 
@@ -686,10 +686,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_cccvd")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_4/StaticBody3D2" unique_id=102184713]
 shape = SubResource("ConcavePolygonShape3D_ehio4")
 
-[node name="locker_4" parent="." unique_id=2010971949 instance=ExtResource("8_vxmom")]
+[node name="locker_4" parent="." unique_id=671707947 instance=ExtResource("8_vxmom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.068448, 0, -0.5716016)
 
-[node name="Cube_4" parent="locker_4" index="0" unique_id=486124623]
+[node name="Cube_4" parent="locker_4" index="0" unique_id=1326759209]
 transform = Transform3D(1, 0, 0, 0, 0.013805145, -0.9999047, 0, 0.9999047, 0.013805145, -4.4135294, 0, -1.6036911)
 surface_material_override/0 = SubResource("StandardMaterial3D_cccvd")
 
@@ -720,16 +720,16 @@ shape = SubResource("ConcavePolygonShape3D_ehio4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="locker_4/Cube_4/Cube_4/StaticBody3D2" unique_id=326270222]
 shape = SubResource("ConcavePolygonShape3D_7a0j3")
 
-[node name="wall" parent="." unique_id=395896738 instance=ExtResource("9_nlecm")]
+[node name="wall" parent="." unique_id=351867920 instance=ExtResource("9_nlecm")]
 transform = Transform3D(0.004398169, 0, 0.99999034, 0, 1, 0, -0.99999034, 0, 0.004398169, -8.508571, 0.023892581, 2.890481)
 
-[node name="Boole_2" parent="wall" index="0" unique_id=397498815]
+[node name="Boole_2" parent="wall" index="0" unique_id=1268651827]
 surface_material_override/0 = SubResource("StandardMaterial3D_vk5l4")
 
-[node name="wall4 (1)3" parent="." unique_id=1673900029 instance=ExtResource("10_nlecm")]
+[node name="wall4 (1)3" parent="." unique_id=1966641543 instance=ExtResource("10_nlecm")]
 transform = Transform3D(-0.040410824, 0, 0.9991831, 0, 1, 0, -0.9991831, 0, -0.040410824, -18.656729, 0.09556842, 2.5118902)
 
-[node name="Cube_8" parent="wall4 (1)3" index="0" unique_id=1422687959]
+[node name="Cube_8" parent="wall4 (1)3" index="0" unique_id=1210604174]
 surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall4 (1)3/Cube_8" index="0" unique_id=1634559010]
@@ -737,10 +737,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall4 (1)3/Cube_8/StaticBody3D" unique_id=1797121836]
 shape = SubResource("ConcavePolygonShape3D_0g0qh")
 
-[node name="wall4 (1)2" parent="." unique_id=465232391 instance=ExtResource("10_nlecm")]
+[node name="wall4 (1)2" parent="." unique_id=1922466251 instance=ExtResource("10_nlecm")]
 transform = Transform3D(0.0004887144, 0, -0.9999999, 0, 1, 0, 0.9999999, 0, 0.0004887144, -17.71892, 0.04778421, -2.297678)
 
-[node name="Cube_8" parent="wall4 (1)2" index="0" unique_id=1422687959]
+[node name="Cube_8" parent="wall4 (1)2" index="0" unique_id=1210604174]
 surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall4 (1)2/Cube_8" index="0" unique_id=473988468]
@@ -748,10 +748,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall4 (1)2/Cube_8/StaticBody3D" unique_id=494076402]
 shape = SubResource("ConcavePolygonShape3D_0g0qh")
 
-[node name="wall4 (1)" parent="." unique_id=17962971 instance=ExtResource("10_nlecm")]
+[node name="wall4 (1)" parent="." unique_id=1994090319 instance=ExtResource("10_nlecm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.709473, 0.023892105, -0.3376534)
 
-[node name="Cube_8" parent="wall4 (1)" index="0" unique_id=1422687959]
+[node name="Cube_8" parent="wall4 (1)" index="0" unique_id=1210604174]
 surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall4 (1)/Cube_8" index="0" unique_id=781437556]
@@ -759,10 +759,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jq5q4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall4 (1)/Cube_8/StaticBody3D" unique_id=1097453571]
 shape = SubResource("ConcavePolygonShape3D_0g0qh")
 
-[node name="wall4 (2)" parent="wall4 (1)" unique_id=193801520 instance=ExtResource("11_vk5l4")]
+[node name="wall4 (2)" parent="wall4 (1)" unique_id=32524452 instance=ExtResource("11_vk5l4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.099435, 7.1525574e-07, 0.29366392)
 
-[node name="Boole_3" parent="wall4 (1)/wall4 (2)" index="0" unique_id=1222631533]
+[node name="Boole_3" parent="wall4 (1)/wall4 (2)" index="0" unique_id=817043158]
 surface_material_override/0 = SubResource("StandardMaterial3D_ehio4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall4 (1)/wall4 (2)/Boole_3" index="0" unique_id=663511330]
@@ -790,18 +790,18 @@ mesh = ExtResource("12_cccvd")
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1712290138]
 transform = Transform3D(-0.9927111, -0.12051795, 0, 0.12051795, -0.9927111, 0, 0, 0, 1, -18.404596, 2.9239874, 0.19422102)
 
-[node name="locker_5" parent="." unique_id=905280399 instance=ExtResource("8_vxmom")]
+[node name="locker_5" parent="." unique_id=763045944 instance=ExtResource("8_vxmom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.053622, 2.3841858e-07, -1.7199645)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="locker_5/Cube_4" parent_id_path=PackedInt32Array(905280399, 486124623) index="0" unique_id=257758214]
+[node name="StaticBody3D" type="StaticBody3D" parent="locker_5/Cube_4" parent_id_path=PackedInt32Array(763045944, 1326759209) index="0" unique_id=257758214]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="locker_5/Cube_4/StaticBody3D" unique_id=595527011]
 shape = SubResource("ConcavePolygonShape3D_b3jsu")
 
-[node name="locker_5" parent="locker_5" unique_id=206122763 instance=ExtResource("8_vxmom")]
+[node name="locker_5" parent="locker_5" unique_id=1190355418 instance=ExtResource("8_vxmom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2390447, 2.3841858e-07, -0.090002894)
 
-[node name="Cube_4" parent="locker_5/locker_5" index="0" unique_id=486124623]
+[node name="Cube_4" parent="locker_5/locker_5" index="0" unique_id=1326759209]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014131546, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="locker_5/locker_5/Cube_4" index="0" unique_id=1294382884]
@@ -809,10 +809,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014131546, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="locker_5/locker_5/Cube_4/StaticBody3D" unique_id=811989328]
 shape = SubResource("ConcavePolygonShape3D_2q318")
 
-[node name="SM_Bed_01" parent="." unique_id=729191655 instance=ExtResource("15_7a0j3")]
+[node name="SM_Bed_01" parent="." unique_id=1465196410 instance=ExtResource("15_7a0j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5693889, 0.00022794289, -2.0905397)
 
-[node name="SM_Bed_01_Base" parent="SM_Bed_01" index="0" unique_id=522260795]
+[node name="SM_Bed_01_Base" parent="SM_Bed_01" index="0" unique_id=93386392]
 surface_material_override/0 = SubResource("StandardMaterial3D_7a0j3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="SM_Bed_01/SM_Bed_01_Base" index="0" unique_id=620914895]
@@ -820,7 +820,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_7a0j3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bed_01/SM_Bed_01_Base/StaticBody3D" unique_id=612444823]
 shape = SubResource("ConcavePolygonShape3D_s8uph")
 
-[node name="SM_Bed_01_S" parent="SM_Bed_01" index="1" unique_id=955820780]
+[node name="SM_Bed_01_S" parent="SM_Bed_01" index="1" unique_id=1914635355]
 surface_material_override/0 = SubResource("StandardMaterial3D_t64y5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="SM_Bed_01/SM_Bed_01_S" index="0" unique_id=632667221]
@@ -828,13 +828,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_t64y5")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Bed_01/SM_Bed_01_S/StaticBody3D" unique_id=895090861]
 shape = SubResource("ConcavePolygonShape3D_kmgy4")
 
-[node name="bus" parent="." unique_id=1079051174 instance=ExtResource("17_t64y5")]
+[node name="bus" parent="." unique_id=461425939 instance=ExtResource("17_t64y5")]
 transform = Transform3D(-0.038891263, 0.9992435, 0.00043307623, -0.99918157, -0.038893636, 0.0111264475, 0.011134872, 5.9302355e-12, 0.999938, -14.048471, -4.7683716e-07, -12.284215)
 
-[node name="Cube_1" parent="bus" index="0" unique_id=107497149]
+[node name="Cube_1" parent="bus" index="0" unique_id=1631306511]
 surface_material_override/0 = SubResource("StandardMaterial3D_b3jsu")
 
-[node name="Cylinder_11" parent="bus/Cube_1" index="0" unique_id=1309190474]
+[node name="Cylinder_11" parent="bus/Cube_1" index="0" unique_id=1522092142]
 surface_material_override/0 = SubResource("StandardMaterial3D_2q318")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bus/Cube_1/Cylinder_11" index="0" unique_id=1945000735]
@@ -842,7 +842,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_2q318")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bus/Cube_1/Cylinder_11/StaticBody3D" unique_id=1054738193]
 shape = SubResource("ConcavePolygonShape3D_dpt0a")
 
-[node name="Cylinder_3" parent="bus/Cube_1" index="1" unique_id=2021503158]
+[node name="Cylinder_3" parent="bus/Cube_1" index="1" unique_id=632651873]
 surface_material_override/0 = SubResource("StandardMaterial3D_bl6si")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bus/Cube_1/Cylinder_3" index="0" unique_id=940506405]
@@ -850,7 +850,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_bl6si")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bus/Cube_1/Cylinder_3/StaticBody3D" unique_id=1596203580]
 shape = SubResource("ConcavePolygonShape3D_ck6e3")
 
-[node name="Cylinder_2_1" parent="bus/Cube_1" index="2" unique_id=553596298]
+[node name="Cylinder_2_1" parent="bus/Cube_1" index="2" unique_id=1945142822]
 surface_material_override/0 = SubResource("StandardMaterial3D_s8uph")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="bus/Cube_1/Cylinder_2_1" index="0" unique_id=1513462213]
@@ -863,10 +863,10 @@ shape = SubResource("ConcavePolygonShape3D_7m04m")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bus/Cube_1/StaticBody3D" unique_id=1623193462]
 shape = SubResource("ConcavePolygonShape3D_rx05r")
 
-[node name="table3" parent="." unique_id=288223225 instance=ExtResource("18_kmgy4")]
+[node name="table3" parent="." unique_id=1245620587 instance=ExtResource("18_kmgy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8049684, 0.0367599, 2.305482)
 
-[node name="Cube_13" parent="table3" index="0" unique_id=721462265]
+[node name="Cube_13" parent="table3" index="0" unique_id=224155221]
 surface_material_override/0 = SubResource("StandardMaterial3D_tlvak")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="table3/Cube_13" index="0" unique_id=1673703736]
@@ -874,10 +874,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tlvak")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="table3/Cube_13/StaticBody3D" unique_id=1634828619]
 shape = SubResource("ConcavePolygonShape3D_tlvak")
 
-[node name="computer1" parent="table3" unique_id=1428465061 instance=ExtResource("19_dpt0a")]
+[node name="computer1" parent="table3" unique_id=731187387 instance=ExtResource("19_dpt0a")]
 transform = Transform3D(-0.998217, 0, 0.059689697, 0, 1, 0, -0.059689697, 0, -0.998217, -0.5293304, 1.1574781, -0.077507496)
 
-[node name="Boole_3" parent="table3/computer1" index="0" unique_id=1469592601]
+[node name="Boole_3" parent="table3/computer1" index="0" unique_id=1414623943]
 surface_material_override/0 = SubResource("StandardMaterial3D_4r87e")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="table3/computer1/Boole_3" index="0" unique_id=1519311168]
@@ -886,10 +886,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4r87e")
 physics_interpolation_mode = 1
 shape = SubResource("ConcavePolygonShape3D_u7bh7")
 
-[node name="computer2" parent="table3" unique_id=1451175448 instance=ExtResource("20_ck6e3")]
+[node name="computer2" parent="table3" unique_id=253596003 instance=ExtResource("20_ck6e3")]
 transform = Transform3D(-0.999947, 0, -0.010297268, 0, 1, 0, 0.010297268, 0, -0.999947, 0.24444032, 1.1579201, -0.3485198)
 
-[node name="Cube_5" parent="table3/computer2" index="0" unique_id=372216278]
+[node name="Cube_5" parent="table3/computer2" index="0" unique_id=1005108918]
 surface_material_override/0 = SubResource("StandardMaterial3D_kmgy4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="table3/computer2/Cube_5" index="0" unique_id=924378858]
@@ -897,10 +897,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_kmgy4")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="table3/computer2/Cube_5/StaticBody3D" unique_id=991828810]
 shape = SubResource("ConcavePolygonShape3D_4r87e")
 
-[node name="computer3" parent="table3" unique_id=210156362 instance=ExtResource("21_7m04m")]
+[node name="computer3" parent="table3" unique_id=1993016944 instance=ExtResource("21_7m04m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30389547, 1.1601396, -0.38084555)
 
-[node name="Cube_1" parent="table3/computer3" index="0" unique_id=989266721]
+[node name="Cube_1" parent="table3/computer3" index="0" unique_id=1691738845]
 surface_material_override/0 = SubResource("StandardMaterial3D_dpt0a")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="table3/computer3/Cube_1" index="0" unique_id=1075837962]
@@ -908,10 +908,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_dpt0a")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="table3/computer3/Cube_1/StaticBody3D" unique_id=1006561524]
 shape = SubResource("ConcavePolygonShape3D_8x48j")
 
-[node name="computer" parent="table3" unique_id=1100387991 instance=ExtResource("22_rx05r")]
+[node name="computer" parent="table3" unique_id=472076824 instance=ExtResource("22_rx05r")]
 transform = Transform3D(-0.99997634, 0, 0.0068765655, 0, 1, 0, -0.0068765655, 0, -0.99997634, 0.07120061, 1.1660322, 0.17293358)
 
-[node name="Cube" parent="table3/computer" index="0" unique_id=572566607]
+[node name="Cube" parent="table3/computer" index="0" unique_id=1277091252]
 surface_material_override/0 = SubResource("StandardMaterial3D_ck6e3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="table3/computer/Cube" index="0" unique_id=1865895988]
@@ -919,16 +919,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ck6e3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="table3/computer/Cube/StaticBody3D" unique_id=1578735676]
 shape = SubResource("ConcavePolygonShape3D_oaqmq")
 
-[node name="ConcreteFences" parent="." unique_id=1605033736 instance=ExtResource("25_tlvak")]
+[node name="ConcreteFences" parent="." unique_id=1244329946 instance=ExtResource("25_tlvak")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6935039, 0, 9.841272)
 
-[node name="Gates" parent="." unique_id=1699579801 instance=ExtResource("26_4r87e")]
+[node name="Gates" parent="." unique_id=794770042 instance=ExtResource("26_4r87e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4136624, 0, 14.416295)
 
-[node name="Roads" parent="." unique_id=1231983146 instance=ExtResource("27_u7bh7")]
+[node name="Roads" parent="." unique_id=2058032847 instance=ExtResource("27_u7bh7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.819475, 0, 42.153286)
 
-[node name="Road_1_line" parent="Roads" index="5" unique_id=1364901482]
+[node name="Road_1_line" parent="Roads" index="5" unique_id=1138519698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.078686, 0, -33.09228)
 surface_material_override/0 = SubResource("StandardMaterial3D_8x48j")
 surface_material_override/1 = SubResource("StandardMaterial3D_oaqmq")
