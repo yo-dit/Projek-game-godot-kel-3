@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://lcql6vb54ymw" path="res://Ui/assets/Ghost Shadow.ttf" id="4_cfmtm"]
 [ext_resource type="FontFile" uid="uid://p1o2rrlypptx" path="res://Ui/assets/Stranger back in the Night.ttf" id="5_qrshg"]
 [ext_resource type="Texture2D" uid="uid://byeaxo4tdfno7" path="res://Ui/assets/stroke.png" id="6_nsuim"]
+[ext_resource type="AudioStream" uid="uid://baj7ek2lb5ma5" path="res://Ui/assets/normal-click.mp3" id="8_t5vtw"]
+[ext_resource type="AudioStream" uid="uid://s1rhmn0q06fo" path="res://Ui/assets/start-click.mp3" id="9_4646p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ce74"]
 atlas = ExtResource("2_cfmtm")
@@ -531,8 +533,17 @@ libraries/ = SubResource("AnimationLibrary_btgkm")
 [node name="BgAmbience" type="AudioStreamPlayer" parent="." unique_id=1917970756]
 stream = ExtResource("3_wq7ea")
 autoplay = true
+bus = &"BGM"
 parameters/looping = true
 
 [node name="QuitConfirmation" type="ConfirmationDialog" parent="." unique_id=815289468]
 title = "Quit Game"
 ok_button_text = "Yes"
+
+[node name="NormalClickSFX" type="AudioStreamPlayer" parent="." unique_id=198441528]
+stream = ExtResource("8_t5vtw")
+bus = &"SFX"
+
+[node name="StartClickSFX" type="AudioStreamPlayer" parent="." unique_id=1095130103]
+stream = ExtResource("9_4646p")
+bus = &"SFX"

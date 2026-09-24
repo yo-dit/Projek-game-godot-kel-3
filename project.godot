@@ -18,6 +18,10 @@ config/name="DusatOut(MainProject)"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://m8hl2om6n5qm"
+
 [display]
 
 window/size/mode=3

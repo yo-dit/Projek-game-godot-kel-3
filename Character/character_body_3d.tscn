@@ -146,12 +146,14 @@ current = true
 target_position = Vector3(0, 0, -3)
 
 [node name="FootstepAudio" type="AudioStreamPlayer3D" parent="." unique_id=96825375]
+bus = &"SFX"
 
 [node name="FreesoundCommunityConcreteFemaleHeels6788" type="AudioStreamPlayer" parent="FootstepAudio" unique_id=165254515]
 stream = ExtResource("8_dqf3w")
 volume_db = 24.0
 
 [node name="FootstepAudioSprint" type="AudioStreamPlayer3D" parent="." unique_id=1953547368]
+bus = &"SFX"
 
 [node name="Crosshair" type="CanvasLayer" parent="." unique_id=795040295]
 

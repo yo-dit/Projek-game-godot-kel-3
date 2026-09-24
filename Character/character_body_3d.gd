@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-@export var walk_speed := 3.0
-@export var sprint_speed := 5.0
+@export var walk_speed := 2.0
+@export var sprint_speed := 3.5
 @export var jump_velocity := 3.5
 @export var mouse_sensitivity := 0.002
 
@@ -28,9 +28,6 @@ func _unhandled_input(event):
 			deg_to_rad(89)
 		)
 
-	if event is InputEventKey:
-		if event.keycode == KEY_ESCAPE and event.pressed:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
 func _physics_process(delta):
