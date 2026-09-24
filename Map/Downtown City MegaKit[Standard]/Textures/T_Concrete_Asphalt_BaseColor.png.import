@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6j5gu2fn65ca"
-path.s3tc="res://.godot/imported/T_Concrete_Asphalt_BaseColor.png-6e856f82b6198dcd2681e7c93da5d92f.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Concrete_Asphalt_BaseColor.png-dfbe00e2dcc8922ae98acdb7426a9ad3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_Concrete_Asphalt_BaseColor.png"
-dest_files=["res://.godot/imported/T_Concrete_Asphalt_BaseColor.png-6e856f82b6198dcd2681e7c93da5d92f.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_Concrete_Asphalt_BaseColor.png"
+dest_files=["res://.godot/imported/T_Concrete_Asphalt_BaseColor.png-dfbe00e2dcc8922ae98acdb7426a9ad3.s3tc.ctex"]
 
 [params]
 

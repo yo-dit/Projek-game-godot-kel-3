@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clea10w6grk5y"
-path.s3tc="res://.godot/imported/T_MarbleFloor_Normal.png-4ef3b55f4f005490767dacb42ee0a5d2.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_MarbleFloor_Normal.png-109936e5a6275287c9e1c3067c177efb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_MarbleFloor_Normal.png"
-dest_files=["res://.godot/imported/T_MarbleFloor_Normal.png-4ef3b55f4f005490767dacb42ee0a5d2.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_MarbleFloor_Normal.png"
+dest_files=["res://.godot/imported/T_MarbleFloor_Normal.png-109936e5a6275287c9e1c3067c177efb.s3tc.ctex"]
 
 [params]
 

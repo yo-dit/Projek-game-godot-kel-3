@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2n6xtbln5rrk"
-path.s3tc="res://.godot/imported/T_dark_interior.png-fb3c463d7b0b4f491d4be29189cbc768.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_dark_interior.png-00a3f7374a6afb7d0cfceb9663b8a24e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_dark_interior.png"
-dest_files=["res://.godot/imported/T_dark_interior.png-fb3c463d7b0b4f491d4be29189cbc768.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_dark_interior.png"
+dest_files=["res://.godot/imported/T_dark_interior.png-00a3f7374a6afb7d0cfceb9663b8a24e.s3tc.ctex"]
 
 [params]
 
