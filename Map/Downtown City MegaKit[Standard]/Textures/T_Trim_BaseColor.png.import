@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjbyedmr5vhf"
-path.s3tc="res://.godot/imported/T_Trim_BaseColor.png-08f44b557ee9b8eeba3dd4e7c97b5aeb.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Trim_BaseColor.png-a38462500f4b1c2f1c760e690dbaa335.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_Trim_BaseColor.png"
-dest_files=["res://.godot/imported/T_Trim_BaseColor.png-08f44b557ee9b8eeba3dd4e7c97b5aeb.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_Trim_BaseColor.png"
+dest_files=["res://.godot/imported/T_Trim_BaseColor.png-a38462500f4b1c2f1c760e690dbaa335.s3tc.ctex"]
 
 [params]
 

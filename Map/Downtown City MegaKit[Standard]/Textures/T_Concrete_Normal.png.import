@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bicl8bb1pwx1"
-path.s3tc="res://.godot/imported/T_Concrete_Normal.png-5de190d0baf3b7fa411d9bed9ff68321.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Concrete_Normal.png-a60dd1a8da6778921a7bbc7524e9a3b4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_Concrete_Normal.png"
-dest_files=["res://.godot/imported/T_Concrete_Normal.png-5de190d0baf3b7fa411d9bed9ff68321.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_Concrete_Normal.png"
+dest_files=["res://.godot/imported/T_Concrete_Normal.png-a60dd1a8da6778921a7bbc7524e9a3b4.s3tc.ctex"]
 
 [params]
 

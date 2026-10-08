@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://das2c4iqp8nk7"
-path.s3tc="res://.godot/imported/T_RoofSlate_Normal.png-73ddad934faf092e00a00b6956c1603f.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_RoofSlate_Normal.png-a2f69d3ea7fac598243d2cbbddf6533b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_RoofSlate_Normal.png"
-dest_files=["res://.godot/imported/T_RoofSlate_Normal.png-73ddad934faf092e00a00b6956c1603f.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_RoofSlate_Normal.png"
+dest_files=["res://.godot/imported/T_RoofSlate_Normal.png-a2f69d3ea7fac598243d2cbbddf6533b.s3tc.ctex"]
 
 [params]
 

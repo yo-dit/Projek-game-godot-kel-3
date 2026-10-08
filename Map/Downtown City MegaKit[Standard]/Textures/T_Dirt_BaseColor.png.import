@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://md523bonnp6k"
-path.s3tc="res://.godot/imported/T_Dirt_BaseColor.png-fcc42e86d38f78506c727bb97a569df7.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Dirt_BaseColor.png-1193297e5579d7663b75ac7718ac09e5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_Dirt_BaseColor.png"
-dest_files=["res://.godot/imported/T_Dirt_BaseColor.png-fcc42e86d38f78506c727bb97a569df7.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_Dirt_BaseColor.png"
+dest_files=["res://.godot/imported/T_Dirt_BaseColor.png-1193297e5579d7663b75ac7718ac09e5.s3tc.ctex"]
 
 [params]
 

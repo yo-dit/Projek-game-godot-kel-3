@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1e6krohmaebb"
-path.s3tc="res://.godot/imported/T_RoofSlate_BaseColor.png-707db988e11f6f237124b576dfce800c.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_RoofSlate_BaseColor.png-7653e5cd4748ee9610b61f5bd32c43e4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Map/Downtown City MegaKit[Standard]/textures/T_RoofSlate_BaseColor.png"
-dest_files=["res://.godot/imported/T_RoofSlate_BaseColor.png-707db988e11f6f237124b576dfce800c.s3tc.ctex"]
+source_file="res://Map/Downtown City MegaKit[Standard]/Textures/T_RoofSlate_BaseColor.png"
+dest_files=["res://.godot/imported/T_RoofSlate_BaseColor.png-7653e5cd4748ee9610b61f5bd32c43e4.s3tc.ctex"]
 
 [params]
 
